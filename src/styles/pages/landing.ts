@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import landing from '../../images/landing.svg';
 
 export const PageLanding = styled.div`
     background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
@@ -21,6 +22,8 @@ export const PageLanding = styled.div`
         align-items:flex-start;
         flex-direction:column;
         justify-content:space-between;
+
+        background: url(${landing}) no-repeat 80% center;
 
         main {
             max-width:350px;
