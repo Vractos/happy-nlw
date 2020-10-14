@@ -1,25 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import './styles/global.css'
+import { PageLanding } from './styles/pages/landing'
+
+import logoImg from './images/logo.svg'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <PageLanding>
+      <div className="content-wrapper">
+        <img src={logoImg} alt="Happy" />
+
+        <main>
+          <h1>Leve Felicidade para o mundo</h1>
+          <p>Visite orfanatos e mude o dia de muitas crianças.</p>
+        </main>
+
+        <div className="location">
+          <strong>Taguatinga</strong>
+          <span>Distrito Federal</span>
+        </div>
+
+        <a href="" className="enter-app">
+          >
         </a>
-      </header>
-    </div>
+      </div>
+    </PageLanding>
   );
 }
 
